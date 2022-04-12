@@ -41,7 +41,6 @@ return packer.startup(function(use)
     end
   }
 
-
   -- Fuzzy Finder
   use {
     'nvim-telescope/telescope.nvim',
@@ -54,7 +53,6 @@ return packer.startup(function(use)
   -- Display key bindlings
   use "folke/which-key.nvim"
 
-
     -- Treesitter interface
   use 'nvim-treesitter/nvim-treesitter'
 
@@ -63,6 +61,7 @@ return packer.startup(function(use)
     'neovim/nvim-lspconfig',
     requires = { 'hrsh7th/cmp-nvim-lsp' }
   }
+
   -- Autocomplete
   use {
     'hrsh7th/nvim-cmp',
@@ -77,14 +76,13 @@ return packer.startup(function(use)
 
 
   -- Theme
-  use 'navarasu/onedark.nvim'
+  use "rebelot/kanagawa.nvim"
 
     -- Statusline
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-
 
   -- Startup screen
   use {
@@ -97,7 +95,6 @@ return packer.startup(function(use)
 
   -- Color highlighter
   use 'norcalli/nvim-colorizer.lua'
-
 
   -- Format
   use {

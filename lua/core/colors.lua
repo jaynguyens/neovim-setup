@@ -1,12 +1,8 @@
-local status_ok, color_scheme = pcall(require, 'onedark')
+local status_ok, color_scheme = pcall(require, 'kanagawa')
 if not status_ok then
   return
 end
 
+require('kanagawa').setup({})
 
-
-require('onedark').setup {
-    style = 'darker'
-}
-
-require('onedark').load()
+require('kanagawa').load()
