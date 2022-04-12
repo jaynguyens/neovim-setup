@@ -13,6 +13,7 @@ local function footer()
   return print_version .. ' ' .. datetime
 end
 
+
 -- Banner
 local banner = {
 "",
@@ -69,6 +70,6 @@ vim.api.nvim_create_augroup("alpha_tabline", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
   group = "alpha_tabline",
   pattern = "alpha",
-  command = "set showtabline=0 laststatus=0 noruler setlocal nofoldenable",
+  command = "set showtabline=0 laststatus=3 noruler setlocal nofoldenable",
 })
 
