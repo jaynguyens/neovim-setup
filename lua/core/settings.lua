@@ -108,5 +108,3 @@ cmd [[
 cmd [[
   autocmd FileType xml,html,xhtml,css,scss,javascript,json,lua,yaml setlocal shiftwidth=2 tabstop=2
 ]]
-
-
