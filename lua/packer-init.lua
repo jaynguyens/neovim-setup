@@ -30,7 +30,18 @@ return packer.startup(function(use)
     requires = {
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     },
-    config = function() require'nvim-tree'.setup {} end
+    config = function() require'nvim-tree'.setup {
+      git = {
+        enable = true,
+        ignore = true,
+        timeout = 400,
+      },
+      filters = {
+        dotfiles = true,
+        custom = {},
+        exclude = {".gitignore", ".env"},
+      },
+    } end
   }
 
   -- Autopair

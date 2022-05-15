@@ -12,7 +12,7 @@ require('telescope').setup {
         ["<C-h>"] = "which_key"
       }
     },
-    file_ignore_patterns = { "node_modules" }
+    file_ignore_patterns = { "node_modules", ".git" }
   },
   extensions = {
     fzf = {
