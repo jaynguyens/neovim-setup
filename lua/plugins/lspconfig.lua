@@ -84,7 +84,7 @@ end
 
 
 -- Language server setup
-local servers = { 'bashls', 'tailwindcss', 'jsonls', 'cssls', 'html', 'tsserver' }
+local servers = { 'bashls', 'tailwindcss', 'jsonls', 'cssls', 'html', 'tsserver', 'rust-analyzer' }
 
 -- Call setup
 for _, lsp in ipairs(servers) do
