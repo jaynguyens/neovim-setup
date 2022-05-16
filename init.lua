@@ -10,6 +10,7 @@ require("plugins/whichkey")
 require("plugins/lspconfig")
 require("plugins/treesitter")
 require("plugins/colorizer")
-require("plugins/indent")
 require("plugins/alpha")
 require("plugins/cmp")
+require("plugins/tree")
+

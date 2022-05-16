@@ -27,21 +27,7 @@ return packer.startup(function(use)
   -- File explorer
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
-    config = function() require'nvim-tree'.setup {
-      git = {
-        enable = true,
-        ignore = true,
-        timeout = 400,
-      },
-      filters = {
-        dotfiles = true,
-        custom = {},
-        exclude = {".gitignore", ".env"},
-      },
-    } end
+    requires = { 'kyazdani42/nvim-web-devicons' },
   }
 
   -- Autopair
@@ -100,9 +86,6 @@ return packer.startup(function(use)
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
-
-  -- Indent styling
-  use "lukas-reineke/indent-blankline.nvim"
 
   -- Color highlighter
   use 'norcalli/nvim-colorizer.lua'
